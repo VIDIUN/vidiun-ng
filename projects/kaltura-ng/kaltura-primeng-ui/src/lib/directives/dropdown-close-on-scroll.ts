@@ -3,7 +3,7 @@ import { Dropdown } from 'primeng/primeng';
 import { ISubscription } from 'rxjs/Subscription';
 
 @Directive({
-	selector: '[kDropdownCloseOnScroll]',
+	selector: '[vDropdownCloseOnScroll]',
 })
 export class DropdownCloseOnScroll implements AfterViewInit, OnDestroy {
 

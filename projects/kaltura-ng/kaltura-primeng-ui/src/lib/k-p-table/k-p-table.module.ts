@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { KPSortableColumn } from './k-p-sortable-column';
+import { VPSortableColumn } from './v-p-sortable-column';
 
 /**
  * @deprecated use separated module for each component
@@ -9,12 +9,12 @@ import { KPSortableColumn } from './k-p-sortable-column';
 
     ],
     declarations: <any[]>[
-        KPSortableColumn
+        VPSortableColumn
     ],
     exports: <any[]>[
-        KPSortableColumn
+        VPSortableColumn
     ],
     providers: <any[]>[
     ]
 })
-export class KPTableModule {}
+export class VPTableModule {}

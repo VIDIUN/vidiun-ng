@@ -1,11 +1,11 @@
-.kDetailsBar {
+.vDetailsBar {
   display: block;
   height: 26px;
   line-height: 26px;
   overflow-y: hidden;
   font-size: 14px;
   color: #666666;
-  .kLink{
+  .vLink{
     font-size: 14px;
     float: right;
     margin-left: 8px;
@@ -21,7 +21,7 @@
       pointer-events: none;
     }
   }
-  .kItemsWrapper{
+  .vItemsWrapper{
     position: relative;
     flex: 1 1 auto;
     height: auto;

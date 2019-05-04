@@ -1,9 +1,9 @@
 import { Directive, Input, Renderer, ElementRef, AfterViewInit, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
 import { StickyScrollService } from '../services/sticky-scroll.service';
-import { cancelOnDestroy, tag } from '@kaltura-ng/kaltura-common';
+import { cancelOnDestroy, tag } from '@vidiun-ng/vidiun-common';
 
 @Directive({
-    selector: '[kSticky]'
+    selector: '[vSticky]'
 })
 
 export class StickyDirective implements OnInit, OnDestroy, AfterViewInit {

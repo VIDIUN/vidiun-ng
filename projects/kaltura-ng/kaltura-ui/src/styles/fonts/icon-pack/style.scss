@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'kmcng-icon-pack';
+  font-family: 'vmcng-icon-pack';
   src:
-    url('./fonts/kmcng-icon-pack.woff2?yzclul') format('woff2'),
-    url('./fonts/kmcng-icon-pack.ttf?yzclul') format('truetype'),
-    url('./fonts/kmcng-icon-pack.woff?yzclul') format('woff'),
-    url('./fonts/kmcng-icon-pack.svg?yzclul#kmcng-icon-pack') format('svg');
+    url('./fonts/vmcng-icon-pack.woff2?yzclul') format('woff2'),
+    url('./fonts/vmcng-icon-pack.ttf?yzclul') format('truetype'),
+    url('./fonts/vmcng-icon-pack.woff?yzclul') format('woff'),
+    url('./fonts/vmcng-icon-pack.svg?yzclul#vmcng-icon-pack') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="kIcon"], [class*=" kIcon"] {
+[class^="vIcon"], [class*=" vIcon"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'kmcng-icon-pack' !important;
+  font-family: 'vmcng-icon-pack' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,13 +24,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.kIconclose_small:before {
+.vIconclose_small:before {
   content: "\e91b";
 }
-.kIcondropdown_arrow_right:before {
+.vIcondropdown_arrow_right:before {
   content: "\e921";
 }
-.kIcondropdown_arrow_left:before {
+.vIcondropdown_arrow_left:before {
   content: "\e91d";
 }
 

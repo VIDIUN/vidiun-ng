@@ -1,7 +1,7 @@
 import { Output, EventEmitter, Component, ElementRef, Input, OnInit, HostListener } from '@angular/core';
 
 @Component({
-	selector: 'kFileDialog',
+	selector: 'vFileDialog',
 	templateUrl: './file-dialog.component.html',
 	styleUrls: ['./file-dialog.component.scss']
 })

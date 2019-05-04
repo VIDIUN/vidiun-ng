@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 
 @Pipe({
-    name: 'kPrimeListOptions'
+    name: 'vPrimeListOptions'
 })
 export class PrimeListOptionsPipe implements PipeTransform {
 

@@ -19,7 +19,7 @@ export const ipRegex = new RegExp("^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[
  * ```
  *
  */
-export class KalturaValidators {
+export class VidiunValidators {
 
     /**
      * Validator that requires controls to have a value represented as IP (value not required).

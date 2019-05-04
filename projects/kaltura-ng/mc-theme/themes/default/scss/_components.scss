@@ -1,13 +1,13 @@
 /* Elevation */
-.kLowElevation{
+.vLowElevation{
     box-shadow: 0 0px 2px 0 rgba(0,0,0,0.24);
-    border: 1px solid $kGrayscale4;
+    border: 1px solid $vGrayscale4;
 }
-.kAverageElevation{
+.vAverageElevation{
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.24);
-    border: 1px solid $kGrayscale4;
+    border: 1px solid $vGrayscale4;
 }
-.kHighElevation{
+.vHighElevation{
     box-shadow: 0 16px 20px 0 rgba(0,0,0,0.30);
-    border: 1px solid $kGrayscale4;
+    border: 1px solid $vGrayscale4;
 }

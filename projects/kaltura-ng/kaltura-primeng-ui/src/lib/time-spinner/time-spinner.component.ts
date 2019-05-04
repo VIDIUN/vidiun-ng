@@ -11,7 +11,7 @@ export const SPINNER_VALUE_ACCESSOR: any = {
 };
 
 @Component({
-  selector: 'kTimeSpinner',
+  selector: 'vTimeSpinner',
   templateUrl: './time-spinner.component.html',
   styleUrls: ['./time-spinner.component.scss'],
   providers: [DomHandler, SPINNER_VALUE_ACCESSOR],

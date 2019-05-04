@@ -13,7 +13,7 @@ var cliArgs = argv.option( [
     name: 'library',
     type: 'string',
     description: "build specific library",
-    example: "'script --library=@kaltura-ng/kaltura-common'"
+    example: "'script --library=@vidiun-ng/vidiun-common'"
   },
 ] ).run().options;
 

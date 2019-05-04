@@ -1,6 +1,6 @@
-.kCopyToClipboardContainer {
+.vCopyToClipboardContainer {
   display: inline-block;
-  .kCopyToClipboard {
+  .vCopyToClipboard {
     width: 24px;
     height: 24px;
     border: none;
@@ -8,17 +8,17 @@
     display: table-cell;
     padding: 0;
   }
-  .kSuccess {
+  .vSuccess {
     @extend %fadein;
     cursor: auto;
   }
 
-  .kError {
+  .vError {
     @extend %fadein;
     cursor: not-allowed;
   }
 
-  .kIdle {
+  .vIdle {
     cursor: pointer;
   }
 }

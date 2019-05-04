@@ -20,7 +20,7 @@ import * as $NS from 'jquery';
 const $ = $NS;
 
 @Component({
-    selector: 'kTags',
+    selector: 'vTags',
     templateUrl: './tags.component.html',
     styleUrls: ['./tags.component.scss']
 })

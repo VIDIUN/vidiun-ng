@@ -1,9 +1,9 @@
-@import './kaltura-prime-ui';
+@import './vidiun-prime-ui';
 
-.kOverrideFAIcons {
+.vOverrideFAIcons {
 
   .pi {
-    @extend .kPrimeUIIcon;
+    @extend .vPrimeUIIcon;
   }
 
   // auto complete
@@ -39,7 +39,7 @@
       }
     }
 
-    .kIsItemDisabled {
+    .vIsItemDisabled {
       color: #999999;
       cursor: default;
     }
@@ -51,8 +51,8 @@
     li.ui-autocomplete-token {
       margin-right: 6px;
       height: 24px;
-      border: 0px solid $kPrimary;
-      background-color: $kPrimary;
+      border: 0px solid $vPrimary;
+      background-color: $vPrimary;
       border-radius: 3px;
       color: #ffffff;
       padding-top: 4px;
@@ -62,9 +62,9 @@
         background-color: darken(#00A784, 10%);
       }
       &.invalid {
-        background-color: $kDandger;
+        background-color: $vDandger;
         &:hover {
-          background-color: darken($kDandger, 10%);
+          background-color: darken($vDandger, 10%);
         }
       }
     }
@@ -83,7 +83,7 @@
     }
     .ui-autocomplete-token-icon.pi-times:before {
 
-      content: $k-icon-close_small;
+      content: $v-icon-close_small;
     }
   }
 }

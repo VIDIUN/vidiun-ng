@@ -1,46 +1,46 @@
 @import '../../styles/scss/theme';
 
-.kInputHelper {
+.vInputHelper {
     display: inline-block;
     vertical-align: middle;
     margin-left: 6px;
     position: relative;
 
-    .kIconhelpLink {
-      color: $kGrayscale3;
+    .vIconhelpLink {
+      color: $vGrayscale3;
       text-decoration: none;
       position: relative;
       z-index: 2;
 
-      &:hover, &.kActive {
-        color: $kSecondary;
+      &:hover, &.vActive {
+        color: $vSecondary;
       }
     }
   }
 
-  .kInputHelperPopup {
+  .vInputHelperPopup {
     border-radius: 3px;
 
-    ::ng-deep .kPopupWidget {
+    ::ng-deep .vPopupWidget {
       box-shadow: none;
     }
 
-    .kInputHelperContainer {
+    .vInputHelperContainer {
       font-size: 15px;
       line-height: 20px;
-      color: $kGrayscale3;
+      color: $vGrayscale3;
       padding: 16px;
       border-radius: 3px;
     }
 
-    .kInputHelperPopupHeader {
-      color: $kGrayscale1;
+    .vInputHelperPopupHeader {
+      color: $vGrayscale1;
       display: flex;
       align-items: center;
       padding-bottom: 10px;
 
-      .kIcon {
-        color: $kGrayscale3;
+      .vIcon {
+        color: $vGrayscale3;
         font-size: 24px;
         margin-right: 14px;
       }

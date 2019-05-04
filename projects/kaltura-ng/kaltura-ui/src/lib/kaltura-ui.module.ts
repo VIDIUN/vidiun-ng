@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FileDialogComponent } from './file-dialog/file-dialog.component';
-import { KalturaPlayerComponent } from './player/player.component';
+import { VidiunPlayerComponent } from './player/player.component';
 import { DatePipe } from './date.pipe';
 import { SafePipe } from './safe.pipe';
 import { TimePipe } from './time.pipe';
@@ -18,7 +18,7 @@ import { ScrollToTopContainerComponent } from './scroll-to-top-container.compone
         SafePipe,
         TimePipe,
 	      FileDialogComponent,
-        KalturaPlayerComponent,
+        VidiunPlayerComponent,
         DatePipe,
         FileSizePipe,
         LineBreakPipe,
@@ -29,7 +29,7 @@ import { ScrollToTopContainerComponent } from './scroll-to-top-container.compone
         TimePipe,
         SafePipe,
 	      FileDialogComponent,
-        KalturaPlayerComponent,
+        VidiunPlayerComponent,
         DatePipe,
         FileSizePipe,
         LineBreakPipe,
@@ -39,4 +39,4 @@ import { ScrollToTopContainerComponent } from './scroll-to-top-container.compone
     providers: <any[]>[
     ]
 })
-export class KalturaUIModule {}
+export class VidiunUIModule {}

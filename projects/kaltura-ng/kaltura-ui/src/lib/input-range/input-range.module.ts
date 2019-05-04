@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputRangeComponent } from './input-range.component';
-import { TooltipModule } from "../tooltip/k-tooltip.module";
+import { TooltipModule } from "../tooltip/v-tooltip.module";
 
 @NgModule({
   imports: <any[]>[

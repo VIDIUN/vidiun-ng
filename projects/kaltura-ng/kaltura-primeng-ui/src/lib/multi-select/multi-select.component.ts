@@ -12,7 +12,7 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MultiSelect } from 'primeng/primeng';
 
 /* tslint:disable */
-export const KALTURA_MULTISELECT_VALUE_ACCESSOR: any = {
+export const VIDIUN_MULTISELECT_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => MultiSelectComponent),
   multi: true
@@ -21,7 +21,7 @@ export const KALTURA_MULTISELECT_VALUE_ACCESSOR: any = {
 /* tslint:enable */
 
 @Component({
-  selector: 'kMultiSelect',
+  selector: 'vMultiSelect',
   styleUrls: ['./multi-select.component.scss'],
   templateUrl: './multi-select.component.html',
   animations: [
@@ -42,7 +42,7 @@ export const KALTURA_MULTISELECT_VALUE_ACCESSOR: any = {
     '[class.ui-inputwrapper-filled]': 'filled',
     '[class.ui-inputwrapper-focus]': 'focus'
   },
-  providers: [KALTURA_MULTISELECT_VALUE_ACCESSOR]
+  providers: [VIDIUN_MULTISELECT_VALUE_ACCESSOR]
   /* tslint:enable */
 })
 export class MultiSelectComponent extends MultiSelect implements OnDestroy {

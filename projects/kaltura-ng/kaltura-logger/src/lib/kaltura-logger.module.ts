@@ -1,8 +1,8 @@
 import { NgModule, ModuleWithProviders, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { KalturaLogger, KalturaLoggerName } from './kaltura-logger.service';
+import { VidiunLogger, VidiunLoggerName } from './vidiun-logger.service';
 import { JL } from 'jsnlog';
-import { KalturaLoggerRecordService } from './kaltura-logger-record.service';
+import { VidiunLoggerRecordService } from './vidiun-logger-record.service';
 
 if (window && window.onerror) {
     window.onerror = null;
@@ -20,18 +20,18 @@ if (window && window.onerror) {
     providers: <any[]>[
     ]
 })
-export class KalturaLoggerModule {
+export class VidiunLoggerModule {
 
 
     static forRoot(name: string): ModuleWithProviders {
         return {
-          ngModule: KalturaLoggerModule,
+          ngModule: VidiunLoggerModule,
           providers: [
-	          KalturaLogger,
+	          VidiunLogger,
 	          {
-		          provide: KalturaLoggerName, useValue: name
+		          provide: VidiunLoggerName, useValue: name
 	          },
-            KalturaLoggerRecordService
+            VidiunLoggerRecordService
           ]
         }
     }

@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-    name: 'kLineBreak'
+    name: 'vLineBreak'
 })
 export class LineBreakPipe implements PipeTransform {
 

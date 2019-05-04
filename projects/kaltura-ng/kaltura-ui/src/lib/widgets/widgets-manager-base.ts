@@ -8,8 +8,8 @@ import 'rxjs/add/operator/map';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { WidgetBase } from './widget-base';
 import { WidgetState } from './widget-state';
-import { KalturaLogger, EmptyLogger } from '@kaltura-ng/kaltura-common';
-import { cancelOnDestroy, tag } from '@kaltura-ng/kaltura-common';
+import { VidiunLogger, EmptyLogger } from '@vidiun-ng/vidiun-common';
+import { cancelOnDestroy, tag } from '@vidiun-ng/vidiun-common';
 
 export declare type FormWidgetsState = {
     [key : number] : WidgetState
@@ -27,9 +27,9 @@ export abstract class WidgetsManagerBase<TData, TRequest> implements WidgetsMana
     private _widgetsState: BehaviorSubject<FormWidgetsState> = new BehaviorSubject<FormWidgetsState>({});
     private _isNewData = false;
     public widgetsState$ = this._widgetsState.asObservable();
-	protected _logger: KalturaLogger;
+	protected _logger: VidiunLogger;
 
-	constructor(logger?: KalturaLogger) {
+	constructor(logger?: VidiunLogger) {
 		this._logger = logger ? logger.subLogger(`widgetsManager`) : new EmptyLogger();
 	}
 

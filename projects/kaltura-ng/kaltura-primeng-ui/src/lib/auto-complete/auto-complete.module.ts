@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TooltipModule } from '@kaltura-ng/kaltura-ui';
+import { TooltipModule } from '@vidiun-ng/vidiun-ui';
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 import { ButtonModule } from 'primeng/components/button/button';
 import { SharedModule } from 'primeng/components/common/shared';

@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Inject, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
-import { KalturaLogger, LogLevels } from '@kaltura-ng/kaltura-logger';
-import { APP_STORAGE_TOKEN, IAppStorage } from '@kaltura-ng/kaltura-common';
+import { VidiunLogger, LogLevels } from '@vidiun-ng/vidiun-logger';
+import { APP_STORAGE_TOKEN, IAppStorage } from '@vidiun-ng/vidiun-common';
 
 const logLevelCacheToken = 'power-user.log-level';
 
 @Component({
-  selector: 'kPowerUserConsole',
+  selector: 'vPowerUserConsole',
   templateUrl: './power-user-console.component.html',
   styleUrls: ['./power-user-console.component.scss']
 })
@@ -28,7 +28,7 @@ export class PowerUserConsoleComponent implements OnInit, OnChanges {
   public _selectedLogLevel: LogLevels;
   public _ready = false;
 
-  constructor(private _logger: KalturaLogger, @Inject(APP_STORAGE_TOKEN) private _storage: IAppStorage) {
+  constructor(private _logger: VidiunLogger, @Inject(APP_STORAGE_TOKEN) private _storage: IAppStorage) {
     this._logger = _logger.subLogger('PowerUserConsoleComponent');
   }
   

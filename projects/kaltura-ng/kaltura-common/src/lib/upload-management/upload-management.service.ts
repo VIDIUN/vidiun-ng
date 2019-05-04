@@ -36,7 +36,7 @@ export class UploadManagement implements OnDestroy {
         }
     }
 
-    // TODO [kmcng] replace this function with log library
+    // TODO [vmcng] replace this function with log library
     private _log(level: 'silly' | 'debug' | 'info' | 'warn' | 'error', message: string, fileId?: string): void {
         const messageContext = fileId ? `file '${fileId}'` : '';
         const origin = 'upload manager';

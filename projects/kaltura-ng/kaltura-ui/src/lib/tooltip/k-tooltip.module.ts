@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { KTooltipDirective } from './k-tooltip.directive';
+import { VTooltipDirective } from './v-tooltip.directive';
 
 @NgModule(
   {
@@ -9,10 +9,10 @@ import { KTooltipDirective } from './k-tooltip.directive';
       CommonModule
     ],
     declarations: <any[]>[
-      KTooltipDirective
+      VTooltipDirective
     ],
     exports: <any[]>[
-      KTooltipDirective
+      VTooltipDirective
     ]
   }
 )

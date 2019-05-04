@@ -4,7 +4,7 @@ const moment = momentNS;
 
 
 @Pipe({
-    name: 'kDate'
+    name: 'vDate'
 })
 export class DatePipe implements PipeTransform {
 

@@ -1,7 +1,7 @@
 import { Component, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'kScrollToTopContainer',
+  selector: 'vScrollToTopContainer',
   template: '<ng-content></ng-content>',
   styles: [':host { display: block }']
 })

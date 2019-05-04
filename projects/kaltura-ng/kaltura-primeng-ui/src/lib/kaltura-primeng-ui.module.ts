@@ -4,14 +4,14 @@ import { InputTextModule, MenuModule } from 'primeng/primeng';
 import { StickyDatatableHeaderDirective } from './directives/sticky-datatable-header.directive';
 import { DropdownCloseOnScroll } from './directives/dropdown-close-on-scroll';
 import { MenuCloseOnScroll } from './directives/menu-close-on-scroll';
-import { KalturaCommonModule } from '@kaltura-ng/kaltura-common';
+import { VidiunCommonModule } from '@vidiun-ng/vidiun-common';
 
 /**
  * @deprecated use separated module for each component
  */
 @NgModule({
     imports: <any[]>[
-        CommonModule, InputTextModule, MenuModule, KalturaCommonModule
+        CommonModule, InputTextModule, MenuModule, VidiunCommonModule
     ],
     declarations: <any[]>[
 	    StickyDatatableHeaderDirective,
@@ -26,4 +26,4 @@ import { KalturaCommonModule } from '@kaltura-ng/kaltura-common';
     providers: <any[]>[
     ]
 })
-export class KalturaPrimeNgUIModule {}
+export class VidiunPrimeNgUIModule {}

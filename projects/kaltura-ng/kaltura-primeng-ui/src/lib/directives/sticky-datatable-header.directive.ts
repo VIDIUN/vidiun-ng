@@ -1,9 +1,9 @@
 import { Directive, Renderer, ElementRef } from '@angular/core';
-import { StickyScrollService } from '@kaltura-ng/kaltura-ui';
-import { StickyDirective } from '@kaltura-ng/kaltura-ui';
+import { StickyScrollService } from '@vidiun-ng/vidiun-ui';
+import { StickyDirective } from '@vidiun-ng/vidiun-ui';
 
 @Directive({
-    selector: '[kStickyHeader]'
+    selector: '[vStickyHeader]'
 })
 
 export class StickyDatatableHeaderDirective extends StickyDirective {

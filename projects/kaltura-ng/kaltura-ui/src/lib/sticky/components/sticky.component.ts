@@ -1,10 +1,10 @@
 import { Component, ElementRef, Input, AfterViewInit, OnDestroy, ViewChild, Renderer2 } from '@angular/core';
 import { StickyScrollService } from '../services/sticky-scroll.service';
 import { StickyDirective } from '../directives/sticky.directive';
-import { cancelOnDestroy, tag } from '@kaltura-ng/kaltura-common';
+import { cancelOnDestroy, tag } from '@vidiun-ng/vidiun-common';
 
 @Component({
-	selector: 'kSticky',
+	selector: 'vSticky',
 	templateUrl: './sticky.component.html',
 	styleUrls: ['./sticky.component.scss']
 })

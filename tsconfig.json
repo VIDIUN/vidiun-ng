@@ -18,35 +18,35 @@
       "dom"
     ],
     "paths": {
-      "@kaltura-ng/kaltura-common": [
-        "dist/kaltura-ng/kaltura-common"
+      "@vidiun-ng/vidiun-common": [
+        "dist/vidiun-ng/vidiun-common"
       ],
-      "@kaltura-ng/kaltura-common/*": [
-        "dist/kaltura-ng/kaltura-common/*"
+      "@vidiun-ng/vidiun-common/*": [
+        "dist/vidiun-ng/vidiun-common/*"
       ],
-      "@kaltura-ng/kaltura-ui": [
-        "dist/kaltura-ng/kaltura-ui"
+      "@vidiun-ng/vidiun-ui": [
+        "dist/vidiun-ng/vidiun-ui"
       ],
-      "@kaltura-ng/kaltura-ui/*": [
-        "dist/kaltura-ng/kaltura-ui/*"
+      "@vidiun-ng/vidiun-ui/*": [
+        "dist/vidiun-ng/vidiun-ui/*"
       ],
-      "@kaltura-ng/kaltura-logger": [
-        "dist/kaltura-ng/kaltura-logger"
+      "@vidiun-ng/vidiun-logger": [
+        "dist/vidiun-ng/vidiun-logger"
       ],
-      "@kaltura-ng/kaltura-logger/*": [
-        "dist/kaltura-ng/kaltura-logger/*"
+      "@vidiun-ng/vidiun-logger/*": [
+        "dist/vidiun-ng/vidiun-logger/*"
       ],
-      "@kaltura-ng/kaltura-primeng-ui": [
-        "dist/kaltura-ng/kaltura-primeng-ui"
+      "@vidiun-ng/vidiun-primeng-ui": [
+        "dist/vidiun-ng/vidiun-primeng-ui"
       ],
-      "@kaltura-ng/kaltura-primeng-ui/*": [
-        "dist/kaltura-ng/kaltura-primeng-ui/*"
+      "@vidiun-ng/vidiun-primeng-ui/*": [
+        "dist/vidiun-ng/vidiun-primeng-ui/*"
       ],
-      "@kaltura-ng/mc-shared": [
-        "dist/kaltura-ng/mc-shared"
+      "@vidiun-ng/mc-shared": [
+        "dist/vidiun-ng/mc-shared"
       ],
-      "@kaltura-ng/mc-shared/*": [
-        "dist/kaltura-ng/mc-shared/*"
+      "@vidiun-ng/mc-shared/*": [
+        "dist/vidiun-ng/mc-shared/*"
       ]
     }
   }

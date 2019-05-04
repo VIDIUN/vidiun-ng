@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'kDetailInfo',
+    selector: 'vDetailInfo',
     templateUrl: './detail-info.component.html',
     styleUrls: ['./detail-info.component.scss']
 })

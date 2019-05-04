@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({name: 'kTime'})
+@Pipe({name: 'vTime'})
 export class TimePipe implements PipeTransform {
   transform(value: number): string {
 	if (typeof value === "string"){

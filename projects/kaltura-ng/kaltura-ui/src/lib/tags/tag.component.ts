@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
 
 @Component({
-    selector: 'kTag',
+    selector: 'vTag',
     templateUrl: './tag.component.html',
     styleUrls: ['./tag.component.scss']
 })

@@ -27,7 +27,7 @@ const Events = {
 };
 
 @Component({
-  selector: 'k-draggable-data-table',
+  selector: 'v-draggable-data-table',
   templateUrl: './draggable-data-table.component.html',
   styleUrls: ['./draggable-data-table.component.scss']
 })

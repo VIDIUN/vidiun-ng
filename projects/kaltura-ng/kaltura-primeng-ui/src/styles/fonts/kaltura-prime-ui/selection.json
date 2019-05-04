@@ -33,7 +33,7 @@
   ],
   "height": 1024,
   "metadata": {
-    "name": "kaltura-prime-ui"
+    "name": "vidiun-prime-ui"
   },
   "preferences": {
     "showGlyphs": true,
@@ -42,9 +42,9 @@
     "showQuickUse2": true,
     "showSVGs": true,
     "fontPref": {
-      "prefix": "k-icon-",
+      "prefix": "v-icon-",
       "metadata": {
-        "fontFamily": "kaltura-prime-ui",
+        "fontFamily": "vidiun-prime-ui",
         "majorVersion": 1,
         "minorVersion": 0
       },
@@ -63,7 +63,7 @@
       "cssVarsFormat": "scss",
       "showVersion": false,
       "selector": "",
-      "classSelector": ".kPrimeUI"
+      "classSelector": ".vPrimeUI"
     },
     "imagePref": {
       "prefix": "icon-",

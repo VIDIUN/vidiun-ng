@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/kaltura-ng/mc-shared",
+  "dest": "../../../dist/vidiun-ng/mc-shared",
   "deleteDestPath": true,
   "lib": {
     "entryFile": "src/public_api.ts"

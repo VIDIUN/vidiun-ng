@@ -1,6 +1,6 @@
 /*
- * Public API Surface of kaltura-logger
+ * Public API Surface of vidiun-logger
  */
 
-export * from './lib/kaltura-logger.module';
-export * from './lib/kaltura-logger.service';
+export * from './lib/vidiun-logger.module';
+export * from './lib/vidiun-logger.service';

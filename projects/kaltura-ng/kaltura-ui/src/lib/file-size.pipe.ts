@@ -9,7 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
  *   {{ 1024 |  fileSize}}
  *   formats to: 1 KB
  */
-@Pipe({name: 'kFileSize'})
+@Pipe({name: 'vFileSize'})
 export class FileSizePipe implements PipeTransform {
 
     private units = [

@@ -1,13 +1,13 @@
 <div #container
-     class="kPopupWidget"
+     class="vPopupWidget"
      [class.transparent]="transparent"
      [class.slider]="slider"
      [style.display]="(state$ | async)?.state !== 'close' ? 'block' : 'none'"
      [style.width]="popupWidth+'px'"
      [style.height]="_popupWidgetHeight">
     <div class="tooltipUp" *ngIf="showTooltip" [style.marginLeft]="popupWidth/2-12+'px'"></div>
-    <i *ngIf="closeBtn" class="kCloseBtn kIconclose_small" [class.closeBtnInside]="closeBtnInside" (click)="close()"></i>
-    <div class="kPopupWidgetContent" *ngIf="isShow">
+    <i *ngIf="closeBtn" class="vCloseBtn vIconclose_small" [class.closeBtnInside]="closeBtnInside" (click)="close()"></i>
+    <div class="vPopupWidgetContent" *ngIf="isShow">
         <ng-content *ngIf="!_template"></ng-content>
 		<ng-template *ngIf="_template"
 			[ngTemplateOutlet]="_template">

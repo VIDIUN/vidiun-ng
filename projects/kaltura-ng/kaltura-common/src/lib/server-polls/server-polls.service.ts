@@ -3,7 +3,7 @@ import { Subscriber } from 'rxjs/Subscriber';
 import { FriendlyHashId } from '../friendly-hash-id';
 import { ISubscription } from 'rxjs/Subscription';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { EmptyLogger, KalturaLogger } from '../kaltura-logger';
+import { EmptyLogger, VidiunLogger } from '../vidiun-logger';
 import { Optional } from '@angular/core';
 
 export type PollInterval = 10 | 30 | 60 | 300;
@@ -28,7 +28,7 @@ export abstract class ServerPolls<TRequest, TError> {
   private _missingDestoryHandling = false;
   private _subscriptions: ISubscription[] = [];
   private _state = new BehaviorSubject({ busy: false });
-    private _logger: KalturaLogger;
+    private _logger: VidiunLogger;
   public state$ = this._state.asObservable();
   private _queueInterval: number = null;
 
@@ -40,10 +40,10 @@ export abstract class ServerPolls<TRequest, TError> {
 
   protected abstract _canExecute(): boolean;
 
-  constructor(kalturaLogger: KalturaLogger) {
+  constructor(vidiunLogger: VidiunLogger) {
 
-	  if (kalturaLogger) {
-		  this._logger = kalturaLogger;
+	  if (vidiunLogger) {
+		  this._logger = vidiunLogger;
 	  } else {
 		  this._logger = new EmptyLogger();
 	  }

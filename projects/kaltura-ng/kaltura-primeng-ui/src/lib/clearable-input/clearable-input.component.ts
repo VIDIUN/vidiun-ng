@@ -9,7 +9,7 @@ export const CLEARABLE_INPUT_VALUE_ACCESSOR: any = {
 };
 
 @Component({
-  selector: 'kClearableInput',
+  selector: 'vClearableInput',
   templateUrl: './clearable-input.component.html',
   styleUrls: ['./clearable-input.component.scss'],
   providers: [DomHandler, CLEARABLE_INPUT_VALUE_ACCESSOR],

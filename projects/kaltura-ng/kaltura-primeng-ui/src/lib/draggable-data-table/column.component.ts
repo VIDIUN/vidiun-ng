@@ -1,7 +1,7 @@
 import {Component, ContentChild, Input, TemplateRef} from '@angular/core';
 
 @Component({
-  selector: 'k-column',
+  selector: 'v-column',
   template: ''
 })
 export class ColumnComponent {

@@ -17,7 +17,7 @@ import { Observable } from 'rxjs/Observable';
 import { ISubscription } from 'rxjs/Subscription';
 import { PopupWidgetLayout } from './popup-widget-layout';
 import 'rxjs/add/observable/fromEvent';
-import { cancelOnDestroy } from '@kaltura-ng/kaltura-common';
+import { cancelOnDestroy } from '@vidiun-ng/vidiun-common';
 
 export const PopupWidgetStates = {
     "Open": "open",
@@ -39,7 +39,7 @@ type PopupWidgetYMargins = {top?: number, bottom?: number, center?: number}
 const WINDOW_GUTTER = 16;
 
 @Component({
-    selector: 'kPopupWidget',
+    selector: 'vPopupWidget',
     templateUrl: './popup-widget.component.html',
     styleUrls: ['./popup-widget.component.scss']
 })
@@ -189,9 +189,9 @@ export class PopupWidgetComponent implements AfterViewInit, OnDestroy{
 	        if (!this._modalOverlay) {
                 if (this.trigger !== 'hover') {this._modalOverlay = document.createElement('div');
                 if (this.modal || this.slider) {
-	                this._modalOverlay.className = "kPopupWidgetModalOverlay";
+	                this._modalOverlay.className = "vPopupWidgetModalOverlay";
                 }else{
-	                this._modalOverlay.className = "kPopupWidgetModalOverlay kTransparent";
+	                this._modalOverlay.className = "vPopupWidgetModalOverlay vTransparent";
                 }
                 this._modalOverlay.style.zIndex = this.popup.nativeElement.style.zIndex - 1;
                 if (!this.slider && this.closeOnClickOutside) {
@@ -319,7 +319,7 @@ export class PopupWidgetComponent implements AfterViewInit, OnDestroy{
 	        }else {
 		        document.body.appendChild(this.popup.nativeElement);
 		        if (this.appendTo){
-		        	console.warn("[kaltura] -> Ignoring append to " + this.appendTo + " since popup is set to modal=true."); // keep warning
+		        	console.warn("[vidiun] -> Ignoring append to " + this.appendTo + " since popup is set to modal=true."); // keep warning
 		        }
 			}
 	        if (this.fullScreen){

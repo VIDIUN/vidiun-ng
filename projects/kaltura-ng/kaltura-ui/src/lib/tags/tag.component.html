@@ -1,10 +1,10 @@
-<div class="kTag" [class.kTagDisabled]="disabled" *ngIf="label" [ngSwitch]="!!template">
+<div class="vTag" [class.vTagDisabled]="disabled" *ngIf="label" [ngSwitch]="!!template">
 	<div *ngSwitchCase="true">
 		<!-- CUSTOM TEMPLATE -->
 		<ng-container *ngTemplateOutlet="template;context:{item: { label: label, tooltip: tooltip, showRemove: showRemove, data: data }}"></ng-container>
 	</div>
-    <div class="kTagContent" title="{{tooltip}}" *ngSwitchCase="false">
-        <span class="kTagLabel">{{label}}</span>
-        <i *ngIf="showRemove" class="kTagRemove kIconclose_small" (click)="!disabled && removeTag(data)"></i>
+    <div class="vTagContent" title="{{tooltip}}" *ngSwitchCase="false">
+        <span class="vTagLabel">{{label}}</span>
+        <i *ngIf="showRemove" class="vTagRemove vIconclose_small" (click)="!disabled && removeTag(data)"></i>
     </div>
 </div>

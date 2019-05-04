@@ -35,7 +35,7 @@
             'left': orientation == 'horizontal' ? handleValue + '%' : null,
             'bottom': orientation == 'vertical' ? handleValue + '%' : null
           }"
-          [kTooltip]="tooltip ? value : ''"
+          [vTooltip]="tooltip ? value : ''"
           [followTarget]="true"></span>
 
     <span *ngIf="range"
@@ -47,7 +47,7 @@
           class="ui-slider-handle ui-state-default ui-corner-all ui-clickable"
           [ngStyle]="{'left': rangeStartLeft, 'bottom': rangeStartBottom}"
           [ngClass]="{'ui-slider-handle-active':handleIndex==0}"
-          [kTooltip]="tooltip ? values[handleIndex] : ''"
+          [vTooltip]="tooltip ? values[handleIndex] : ''"
           [followTarget]="true"></span>
 
     <span *ngIf="range"
@@ -59,6 +59,6 @@
           class="ui-slider-handle ui-state-default ui-corner-all ui-clickable"
           [ngStyle]="{'left': rangeEndLeft, 'bottom': rangeEndBottom}"
           [ngClass]="{'ui-slider-handle-active':handleIndex==1}"
-          [kTooltip]="tooltip ? values[handleIndex] : ''"
+          [vTooltip]="tooltip ? values[handleIndex] : ''"
           [followTarget]="true"></span>
 </div>

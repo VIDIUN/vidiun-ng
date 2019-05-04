@@ -13,7 +13,7 @@ var writeJsonFile = require('write-json-file');
 	var rootPath = findRoot(process.cwd());
 
 	if (rootPath) {
-		var distPath =  path.resolve(rootPath, '../../../dist/kaltura-ng/mc-theme');
+		var distPath =  path.resolve(rootPath, '../../../dist/vidiun-ng/mc-theme');
 
 		if (fs.existsSync(distPath)) {
 			deleteFolderRecursive(distPath);

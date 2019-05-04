@@ -1,20 +1,20 @@
 {
-  "name": "@kaltura-ng/mc-shared",
+  "name": "@vidiun-ng/mc-shared",
   "version": "5.1.5",
   "private": false,
-  "description": "Angular - Kaltura Managemenet consoles UI directives, pipes and services",
+  "description": "Angular - Vidiun Managemenet consoles UI directives, pipes and services",
   "scripts": {
-    "build": "node ../../../scripts/build.js --library=@kaltura-ng/mc-shared"
+    "build": "node ../../../scripts/build.js --library=@vidiun-ng/mc-shared"
   },
   "keywords": [
-    "kaltura",
-    "kaltura-ng"
+    "vidiun",
+    "vidiun-ng"
   ],
   "license": "AGPL-3.0",
-  "homepage": "https://github.com/kaltura/kaltura-ng#readme",
+  "homepage": "https://github.com/vidiun/vidiun-ng#readme",
   "author": {
-    "name": "Kaltura Community",
-    "email": "community@kaltura.com"
+    "name": "Vidiun Community",
+    "email": "community@vidiun.com"
   },
   "contributors": [
     {
@@ -28,10 +28,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaltura/kaltura-ng.git"
+    "url": "https://github.com/vidiun/vidiun-ng.git"
   },
   "bugs": {
-    "url": "https://github.com/kaltura/kaltura-ng/issues"
+    "url": "https://github.com/vidiun/vidiun-ng/issues"
   },
   "engines": {
     "node": ">=8.9.1 <9.0.0",
@@ -45,9 +45,9 @@
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.2.0",
     "@angular/forms": "^6.1.6",
-    "@kaltura-ng/kaltura-common": "7.0.3",
-    "@kaltura-ng/kaltura-logger": "3.0.2",
-    "@kaltura-ng/kaltura-ui": "7.1.0",
+    "@vidiun-ng/vidiun-common": "7.0.3",
+    "@vidiun-ng/vidiun-logger": "3.0.2",
+    "@vidiun-ng/vidiun-ui": "7.1.0",
     "@ngx-translate/core": "^10.0.2",
     "primeng": "^7.0.0",
     "seamless-immutable": "^7.1.2"

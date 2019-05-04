@@ -1,2 +1,2 @@
-export * from './k-tooltip.directive';
-export * from './k-tooltip.module';
+export * from './v-tooltip.directive';
+export * from './v-tooltip.module';

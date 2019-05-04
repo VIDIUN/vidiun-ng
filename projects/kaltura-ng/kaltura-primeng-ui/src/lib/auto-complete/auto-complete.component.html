@@ -1,4 +1,4 @@
-<span [ngClass]="{'ui-autocomplete ui-widget kOverrideFAIcons':true,'ui-autocomplete-dd':dropdown,'ui-autocomplete-multiple':multiple}"
+<span [ngClass]="{'ui-autocomplete ui-widget vOverrideFAIcons':true,'ui-autocomplete-dd':dropdown,'ui-autocomplete-multiple':multiple}"
       [ngStyle]="style" [class]="styleClass">
             <input *ngIf="!multiple" #in [attr.type]="type" [attr.id]="inputId" [ngStyle]="inputStyle"
                    [class]="inputStyleClass" autocomplete="off" [attr.required]="required"
@@ -13,7 +13,7 @@
                  class="ui-autocomplete-multiple-container ui-widget ui-inputtext ui-state-default ui-corner-all"
                  [ngClass]="{'ui-state-disabled':disabled,'ui-state-focus':focus}" (click)="multiIn.focus()">
                 <li #token *ngFor="let val of value" [class]="'ui-autocomplete-token ui-state-highlight ui-corner-all ' + (classField && val ? val[classField] : '')"
-                    [kTooltip]="val" [tooltipResolver]="tooltipResolver">
+                    [vTooltip]="val" [tooltipResolver]="tooltipResolver">
                     <span class="ui-autocomplete-token-icon pi pi-fw pi-times" (click)="removeItem(token)"
                           *ngIf="!disabled"></span>
                     <span *ngIf="!selectedItemTemplate" class="ui-autocomplete-token-label" (click)="onItemClick(val)">{{field ? ObjectUtils.resolveFieldData(val, field): val}}</span>
@@ -52,11 +52,11 @@
             </li>
                     <li *ngFor="let option of suggestions; let idx = index"
                         [ngClass]="{'ui-autocomplete-list-item ui-corner-all':true,'ui-state-highlight':(highlightOption==option)}"
-                    [class.kIsItemDisabled]="option | kIsSuggestionDisabled : suggestionSelectableField"
+                    [class.vIsItemDisabled]="option | vIsSuggestionDisabled : suggestionSelectableField"
                         (mouseenter)="highlightOption=option" (mouseleave)="highlightOption=null"
                         (click)="selectItem(option)">
                         <span *ngIf="!itemTemplate"
-                              [innerHTML]="_getSuggestionText(option) | kHighlight : searchText"></span>
+                              [innerHTML]="_getSuggestionText(option) | vHighlight : searchText"></span>
                         <ng-container
                           *ngTemplateOutlet="itemTemplate; context: {$implicit: option, index: idx}"></ng-container>
                     </li>

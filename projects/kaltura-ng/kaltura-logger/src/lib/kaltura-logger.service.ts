@@ -1,9 +1,9 @@
 import { Injectable, SkipSelf, Optional, Self, Inject, Provider, OnDestroy } from '@angular/core';
 import { JL } from 'jsnlog';
 import { InjectionToken } from '@angular/core';
-import { KalturaLoggerRecordService } from './kaltura-logger-record.service';
+import { VidiunLoggerRecordService } from './vidiun-logger-record.service';
 
-export const KalturaLoggerName = new InjectionToken<string>('kaltura-logger-name');
+export const VidiunLoggerName = new InjectionToken<string>('vidiun-logger-name');
 
 export type Context = { [key: string]: any };
 export type DefferedContext = () => Context;
@@ -12,12 +12,12 @@ export type LogLevels = 'All' | 'Trace' | 'Debug' | 'Info' | 'Warn' | 'Error' | 
 let randomLoggerNameNumber = 1;
 
 @Injectable()
-export class KalturaLogger implements OnDestroy {
+export class VidiunLogger implements OnDestroy {
   static resetDefaultExecuted = false;
 
   static resetDefaultJSNLog() {
-    if (!KalturaLogger.resetDefaultExecuted) {
-      KalturaLogger.resetDefaultExecuted = true;
+    if (!VidiunLogger.resetDefaultExecuted) {
+      VidiunLogger.resetDefaultExecuted = true;
       const consoleAppender = JL.createConsoleAppender('consoleAppender');
 
       JL().setOptions({
@@ -29,9 +29,9 @@ export class KalturaLogger implements OnDestroy {
 
   static createLogger(loggerName: string): Provider[] {
     return [
-      KalturaLogger,
+      VidiunLogger,
       {
-        provide: KalturaLoggerName, useValue: loggerName
+        provide: VidiunLoggerName, useValue: loggerName
       }
     ];
   }
@@ -45,11 +45,11 @@ export class KalturaLogger implements OnDestroy {
   }
 
 
-  constructor(@Inject(KalturaLoggerName) @Optional() @Self() name: string,
-              @SkipSelf() @Optional() parentLogger: KalturaLogger,
-              @Optional() private _loggerRecordInterceptor: KalturaLoggerRecordService) {
+  constructor(@Inject(VidiunLoggerName) @Optional() @Self() name: string,
+              @SkipSelf() @Optional() parentLogger: VidiunLogger,
+              @Optional() private _loggerRecordInterceptor: VidiunLoggerRecordService) {
 
-    KalturaLogger.resetDefaultJSNLog();
+    VidiunLogger.resetDefaultJSNLog();
 
     if (!name) {
       name = 'logger' + randomLoggerNameNumber;
@@ -96,8 +96,8 @@ export class KalturaLogger implements OnDestroy {
     JL().setOptions({level: level});
   }
 
-  public subLogger(name: string): KalturaLogger {
-    return new KalturaLogger(name, this, this._loggerRecordInterceptor);
+  public subLogger(name: string): VidiunLogger {
+    return new VidiunLogger(name, this, this._loggerRecordInterceptor);
   }
 
   ngOnDestroy() {

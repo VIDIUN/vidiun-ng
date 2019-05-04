@@ -1,7 +1,7 @@
 import {Component, ChangeDetectionStrategy, OnInit, Input} from "@angular/core";
 import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
 @Component({
-  selector: 'kInputRange',
+  selector: 'vInputRange',
   templateUrl: './input-range.component.html',
   styleUrls: ['./input-range.component.scss'],
   providers: [

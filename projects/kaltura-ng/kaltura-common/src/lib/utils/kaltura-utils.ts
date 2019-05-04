@@ -6,7 +6,7 @@ const _xmlCharMap = {
     '&': '&amp;'
 };
 
-export class KalturaUtils
+export class VidiunUtils
 {
     static escapeXml(value: any) : string {
         let parsedValue = value;
@@ -53,7 +53,7 @@ export class KalturaUtils
 	{
 		Object.keys(value).forEach(function(key) {
 			if (value[key] && typeof value[key] === 'object') {
-				KalturaUtils.removeEmptyProperties(value[key]);
+				VidiunUtils.removeEmptyProperties(value[key]);
 			}
 			else if (value[key] === null) {
 				delete value[key]

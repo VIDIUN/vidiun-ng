@@ -11,7 +11,7 @@ export interface PrimeItem
 }
 
 @Directive({
-    selector: 'p-tree[kRefinePrimeTree]',
+    selector: 'p-tree[vRefinePrimeTree]',
 })
 export class RefinePrimeTree {
 

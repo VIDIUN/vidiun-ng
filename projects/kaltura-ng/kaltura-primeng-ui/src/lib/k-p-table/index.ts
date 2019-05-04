@@ -1,2 +1,2 @@
-export * from './k-p-sortable-column';
-export * from './k-p-table.module';
+export * from './v-p-sortable-column';
+export * from './v-p-table.module';

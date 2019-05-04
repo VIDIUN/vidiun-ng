@@ -47,31 +47,31 @@ async function buildLibrary(library) {
   const libraryName = library? library.name : null;
   log.info(`build library`, libraryName);
   switch (libraryName) {
-    case "@kaltura-ng/kaltura-logger":
-      await executeNGBuild('@kaltura-ng/kaltura-logger');
+    case "@vidiun-ng/vidiun-logger":
+      await executeNGBuild('@vidiun-ng/vidiun-logger');
       break;
-    case "@kaltura-ng/kaltura-common":
-      await executeNGBuild('@kaltura-ng/kaltura-common');
+    case "@vidiun-ng/vidiun-common":
+      await executeNGBuild('@vidiun-ng/vidiun-common');
       break;
-    case "@kaltura-ng/kaltura-ui": {
-      await executeNGBuild('@kaltura-ng/kaltura-ui');
-      const source = path.resolve(rootPath, 'projects/kaltura-ng/kaltura-ui/src/styles');
-      const target = path.resolve(distPath, 'kaltura-ng/kaltura-ui/styles');
+    case "@vidiun-ng/vidiun-ui": {
+      await executeNGBuild('@vidiun-ng/vidiun-ui');
+      const source = path.resolve(rootPath, 'projects/vidiun-ng/vidiun-ui/src/styles');
+      const target = path.resolve(distPath, 'vidiun-ng/vidiun-ui/styles');
       await copyFolders(source, target);
     }
       break;
-    case "@kaltura-ng/kaltura-primeng-ui": {
-      await executeNGBuild('@kaltura-ng/kaltura-primeng-ui');
-      const source = path.resolve(rootPath, 'projects/kaltura-ng/kaltura-primeng-ui/src/styles');
-      const target = path.resolve(distPath, 'kaltura-ng/kaltura-primeng-ui/styles');
+    case "@vidiun-ng/vidiun-primeng-ui": {
+      await executeNGBuild('@vidiun-ng/vidiun-primeng-ui');
+      const source = path.resolve(rootPath, 'projects/vidiun-ng/vidiun-primeng-ui/src/styles');
+      const target = path.resolve(distPath, 'vidiun-ng/vidiun-primeng-ui/styles');
       await copyFolders(source, target);
     }
       break;
-    case "@kaltura-ng/mc-shared":
-      await executeNGBuild('@kaltura-ng/mc-shared');
+    case "@vidiun-ng/mc-shared":
+      await executeNGBuild('@vidiun-ng/mc-shared');
       break;
-    case "@kaltura-ng/mc-theme":
-      const cwd = path.resolve(rootPath, 'projects/kaltura-ng/mc-theme');
+    case "@vidiun-ng/mc-theme":
+      const cwd = path.resolve(rootPath, 'projects/vidiun-ng/mc-theme');
       executeCommand('node', ['./scripts/build.js'], {cwd});
       break;
     default:
@@ -81,51 +81,51 @@ async function buildLibrary(library) {
 }
 
 
-const kalturaLogger = {
-  name: '@kaltura-ng/kaltura-logger',
-  sourcePath: path.resolve(rootPath, 'projects/kaltura-ng/kaltura-logger'),
-  distPath: path.resolve(distPath, 'kaltura-ng/kaltura-logger'),
+const vidiunLogger = {
+  name: '@vidiun-ng/vidiun-logger',
+  sourcePath: path.resolve(rootPath, 'projects/vidiun-ng/vidiun-logger'),
+  distPath: path.resolve(distPath, 'vidiun-ng/vidiun-logger'),
   dependencies: new Set(),
   dependents: new Set()
 };
 
-const kalturaCommon = {
-  name: '@kaltura-ng/kaltura-common',
-  sourcePath: path.resolve(rootPath, 'projects/kaltura-ng/kaltura-common'),
-  distPath: path.resolve(distPath, 'kaltura-ng/kaltura-common'),
+const vidiunCommon = {
+  name: '@vidiun-ng/vidiun-common',
+  sourcePath: path.resolve(rootPath, 'projects/vidiun-ng/vidiun-common'),
+  distPath: path.resolve(distPath, 'vidiun-ng/vidiun-common'),
   dependencies: new Set(),
   dependents: new Set()
 };
 
-const kalturaUI = {
-  name: '@kaltura-ng/kaltura-ui',
-  sourcePath: path.resolve(rootPath, 'projects/kaltura-ng/kaltura-ui'),
-  distPath: path.resolve(distPath, 'kaltura-ng/kaltura-ui'),
+const vidiunUI = {
+  name: '@vidiun-ng/vidiun-ui',
+  sourcePath: path.resolve(rootPath, 'projects/vidiun-ng/vidiun-ui'),
+  distPath: path.resolve(distPath, 'vidiun-ng/vidiun-ui'),
   dependencies: new Set(),
   dependents: new Set()
 
 };
 
-const kalturaPrimeUI = {
-  name: '@kaltura-ng/kaltura-primeng-ui',
-  sourcePath: path.resolve(rootPath, 'projects/kaltura-ng/kaltura-primeng-ui'),
-  distPath: path.resolve(distPath, 'kaltura-ng/kaltura-primeng-ui'),
+const vidiunPrimeUI = {
+  name: '@vidiun-ng/vidiun-primeng-ui',
+  sourcePath: path.resolve(rootPath, 'projects/vidiun-ng/vidiun-primeng-ui'),
+  distPath: path.resolve(distPath, 'vidiun-ng/vidiun-primeng-ui'),
   dependencies: new Set(),
   dependents: new Set()
 }
 
 const mcShared = {
-  name: '@kaltura-ng/mc-shared',
-  sourcePath: path.resolve(rootPath, 'projects/kaltura-ng/mc-shared'),
-  distPath: path.resolve(distPath, 'kaltura-ng/mc-shared'),
+  name: '@vidiun-ng/mc-shared',
+  sourcePath: path.resolve(rootPath, 'projects/vidiun-ng/mc-shared'),
+  distPath: path.resolve(distPath, 'vidiun-ng/mc-shared'),
   dependencies: new Set(),
   dependents: new Set()
 }
 
 const mcTheme = {
-  name: '@kaltura-ng/mc-theme',
-  sourcePath: path.resolve(rootPath, 'projects/kaltura-ng/mc-theme'),
-  distPath: path.resolve(distPath, 'kaltura-ng/mc-theme'),
+  name: '@vidiun-ng/mc-theme',
+  sourcePath: path.resolve(rootPath, 'projects/vidiun-ng/mc-theme'),
+  distPath: path.resolve(distPath, 'vidiun-ng/mc-theme'),
   dependencies: new Set(),
   dependents: new Set()
 }
@@ -139,11 +139,11 @@ function updateDependencies(library, dependencies) {
 }
 
 // TODO should extract peer depenedencies and build order automatically from package.json of libraries
-updateDependencies(kalturaUI, [kalturaCommon]);
-updateDependencies(kalturaPrimeUI, [kalturaCommon, kalturaUI]);
-updateDependencies(mcShared, [kalturaCommon, kalturaUI, kalturaLogger]);
+updateDependencies(vidiunUI, [vidiunCommon]);
+updateDependencies(vidiunPrimeUI, [vidiunCommon, vidiunUI]);
+updateDependencies(mcShared, [vidiunCommon, vidiunUI, vidiunLogger]);
 
-const repositoryLibraries = new Set([kalturaLogger, kalturaCommon, kalturaUI, kalturaPrimeUI, mcShared, mcTheme]);
+const repositoryLibraries = new Set([vidiunLogger, vidiunCommon, vidiunUI, vidiunPrimeUI, mcShared, mcTheme]);
 
 LoadPackageJsonFiles(repositoryLibraries);
 

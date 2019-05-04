@@ -3,7 +3,7 @@ import { DetailInfoComponent } from './detail-info.component';
 import { ISubscription } from 'rxjs/Subscription';
 
 @Component({
-  selector: 'k-details-bar',
+  selector: 'v-details-bar',
   templateUrl: './details-bar.component.html',
   styleUrls: ['./details-bar.component.scss']
 })

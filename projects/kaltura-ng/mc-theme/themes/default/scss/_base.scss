@@ -22,30 +22,30 @@ label {
 
 .link {
 	font-size: 15px;
-	color: $kTertiary;
+	color: $vTertiary;
 	text-decoration: underline;
 	cursor: pointer;
 	&:hover:not(.disabled) {
-		color: darken($kTertiary, 10%);
+		color: darken($vTertiary, 10%);
 	}
 	&:active:not(.disabled) {
-		color: $kTertiary;
+		color: $vTertiary;
 	}
 	&:disabled {
 		border: 0px solid white;
 		cursor: default;
-		color: $kGrayscale4;
+		color: $vGrayscale4;
 	}
 	&.disabled {
 		border: 0px solid white;
 		cursor: default;
-		color: $kGrayscale4;
+		color: $vGrayscale4;
 	}
 	text-overflow: ellipsis;
 }
 
 .error {
-	color: $kDandger;
+	color: $vDandger;
 }
 
 a {
@@ -59,7 +59,7 @@ select {
 
 /* main content width according to screen resolution */
 @media screen and (max-width: 991px) {
-	.kContent {
+	.vContent {
 		width: 970px;
 		margin: auto !important;
 		display: flex;
@@ -67,7 +67,7 @@ select {
 }
 
 @media screen and (min-width: 992px) {
-	.kContent {
+	.vContent {
 		width: 970px;
 		margin: auto !important;
 		display: flex;
@@ -75,7 +75,7 @@ select {
 }
 
 @media screen and (min-width: 1310px) {
-	.kContent {
+	.vContent {
 		width: 1200px;
 		margin: auto !important;
 		display: flex;
@@ -83,7 +83,7 @@ select {
 }
 
 @media screen and (min-width: 1610px) {
-	.kContent {
+	.vContent {
 		width: 1500px;
 		margin: auto !important;
 		display: flex;

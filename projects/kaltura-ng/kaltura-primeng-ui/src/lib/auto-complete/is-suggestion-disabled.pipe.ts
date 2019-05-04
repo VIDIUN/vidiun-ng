@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-    name: 'kIsSuggestionDisabled'
+    name: 'vIsSuggestionDisabled'
 })
 export class IsSuggestionDisabledPipe implements PipeTransform {
     transform(value: any, arg: string): boolean {

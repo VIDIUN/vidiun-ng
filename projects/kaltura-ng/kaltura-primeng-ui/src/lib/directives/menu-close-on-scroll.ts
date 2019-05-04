@@ -2,7 +2,7 @@ import { Directive, ContentChild, HostListener, Input, Optional } from '@angular
 import { Menu, TieredMenu } from 'primeng/primeng';
 
 @Directive({
-	selector: '[kMenuCloseOnScroll]',
+	selector: '[vMenuCloseOnScroll]',
 })
 export class MenuCloseOnScroll {
 	private  _menu: Menu | TieredMenu;

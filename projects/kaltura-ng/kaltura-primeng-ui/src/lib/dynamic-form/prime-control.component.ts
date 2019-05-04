@@ -1,10 +1,10 @@
 import {Component, Input, OnInit, OnDestroy} from '@angular/core';
 import {FormGroup} from '@angular/forms';
-import { DatePickerControl, DynamicDropdownControl, DynamicFormControlBase, ListControl } from '@kaltura-ng/kaltura-ui';
-import { cancelOnDestroy, tag } from '@kaltura-ng/kaltura-common';
+import { DatePickerControl, DynamicDropdownControl, DynamicFormControlBase, ListControl } from '@vidiun-ng/vidiun-ui';
+import { cancelOnDestroy, tag } from '@vidiun-ng/vidiun-common';
 
 @Component({
-    selector: 'k-prime-control',
+    selector: 'v-prime-control',
     templateUrl: './prime-control.component.html',
     styleUrls: ['./prime-control.component.scss']
 })

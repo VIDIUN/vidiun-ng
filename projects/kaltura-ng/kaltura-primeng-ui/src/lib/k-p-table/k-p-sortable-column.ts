@@ -5,15 +5,15 @@ import { Table } from 'primeng/table';
 import { DomHandler } from 'primeng/api';
 
 @Directive({
-    selector: '[kpSortableColumn]',
+    selector: '[vpSortableColumn]',
     host: {
         '[class.ui-sortable-column]': 'isEnabled',
         '[class.ui-state-highlight]': 'sorted'
     }
 })
-export class KPSortableColumn implements OnInit, OnDestroy {
+export class VPSortableColumn implements OnInit, OnDestroy {
 
-    @Input("kpSortableColumn") field: string;
+    @Input("vpSortableColumn") field: string;
 
     isEnabled: boolean;
     sorted: boolean;

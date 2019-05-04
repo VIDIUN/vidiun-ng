@@ -9,7 +9,7 @@
         position: fixed;
     }
 }
-.kPopupWidget{
+.vPopupWidget{
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0 16px 20px 0 rgba(0,0,0,0.3);
@@ -22,7 +22,7 @@
         box-shadow: none;
         background: 0;
     }
-    .kCloseBtn:not(.closeBtnInside) {
+    .vCloseBtn:not(.closeBtnInside) {
         position: absolute;
         right: -118px;
         top: -62px;
@@ -40,7 +40,7 @@
           background-color: rgba(255, 255, 255, 0.4);
         }
     }
-    .kCloseBtn.closeBtnInside {
+    .vCloseBtn.closeBtnInside {
         font-size: 14px;
         float: right;
         color: #999999;

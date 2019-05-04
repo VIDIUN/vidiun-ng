@@ -3,9 +3,9 @@ import { InjectionToken } from '@angular/core';
 export type Context = { [key: string]: any };
 export type DefferedContext = () => Context;
 
-export const KalturaLoggerInjectionToken = new InjectionToken<KalturaLogger>('kaltura-logger');
+export const VidiunLoggerInjectionToken = new InjectionToken<VidiunLogger>('vidiun-logger');
 
-export interface KalturaLogger {
+export interface VidiunLogger {
 	trace(message: string, context?: Context): void;
 
 	trace(message: string, context?: DefferedContext): void;
@@ -42,10 +42,10 @@ export interface KalturaLogger {
 
 	fatal(message: string, context?: Error | Context): void;
 
-	subLogger(name: string): KalturaLogger;
+	subLogger(name: string): VidiunLogger;
 }
 
-export class EmptyLogger implements KalturaLogger {
+export class EmptyLogger implements VidiunLogger {
 	trace(message: string, context?: Context): void;
 	trace(message: string, context?: DefferedContext): void;
 	trace(message: string, context?: Context | DefferedContext): void;
@@ -82,7 +82,7 @@ export class EmptyLogger implements KalturaLogger {
 	fatal(message: string, context?): void {
 	}
 
-	subLogger(name: string): KalturaLogger {
+	subLogger(name: string): VidiunLogger {
 		return new EmptyLogger();
 	}
 }

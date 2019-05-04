@@ -1,2 +1,2 @@
 export * from './download';
-export * from './kaltura-utils';
+export * from './vidiun-utils';

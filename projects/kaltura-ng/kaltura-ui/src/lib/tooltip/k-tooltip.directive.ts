@@ -3,9 +3,9 @@ import { Directive, ElementRef, HostListener, Input, OnDestroy } from '@angular/
 export type TooltipPositions = 'top' | 'left' | 'right' | 'bottom';
 
 @Directive({
-	selector: '[kTooltip]'
+	selector: '[vTooltip]'
 })
-export class KTooltipDirective implements OnDestroy {
+export class VTooltipDirective implements OnDestroy {
 
     constructor(private elementRef: ElementRef) {
     }
@@ -26,7 +26,7 @@ export class KTooltipDirective implements OnDestroy {
     @Input() showOnEllipsis = false;
 
     @Input()
-    set kTooltip(value: any) {
+    set vTooltip(value: any) {
         if (this.isValidContent(value)) {
             this._tooltipContent = value;
         }

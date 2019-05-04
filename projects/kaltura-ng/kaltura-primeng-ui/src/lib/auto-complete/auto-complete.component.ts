@@ -18,12 +18,12 @@ import {trigger,state,style,transition,animate,AnimationEvent} from '@angular/an
 import { Observable } from 'rxjs/Observable';
 import { ISubscription } from 'rxjs/Subscription';
 import { AutoComplete as PrimeAutoComplete, AUTOCOMPLETE_VALUE_ACCESSOR } from "primeng/components/autocomplete/autocomplete";
-import { KalturaBrowserUtils, BrowserNames } from '@kaltura-ng/kaltura-ui';
+import { VidiunBrowserUtils, BrowserNames } from '@vidiun-ng/vidiun-ui';
 import { DomHandler } from "primeng/components/dom/domhandler";
 import { ObjectUtils } from 'primeng/components/utils/objectutils';
 import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/forms';
 
-// [kmcng] upon upgrade: Be patient and bring a big cup of coffee.... good luck!
+// [vmcng] upon upgrade: Be patient and bring a big cup of coffee.... good luck!
 
 export interface SuggestionsProviderData{
     suggestions : any[];
@@ -32,7 +32,7 @@ export interface SuggestionsProviderData{
 }
 
 /* tslint:disable */
-export const KALTURA_AUTOCOMPLETE_VALUE_ACCESSOR: any = {
+export const VIDIUN_AUTOCOMPLETE_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
     useExisting: forwardRef(() => AutoComplete),
     multi: true
@@ -41,13 +41,13 @@ export const KALTURA_AUTOCOMPLETE_VALUE_ACCESSOR: any = {
 /* tslint:enable */
 
 @Component({
-    selector: 'kAutoComplete',
+    selector: 'vAutoComplete',
 
     /* tslint:disable */
-    // [kmcng] upon upgrade: sync with original component
+    // [vmcng] upon upgrade: sync with original component
     styleUrls: [ './auto-complete.component.scss' ],
     templateUrl: './auto-complete.component.html',
-    providers: [KALTURA_AUTOCOMPLETE_VALUE_ACCESSOR],
+    providers: [VIDIUN_AUTOCOMPLETE_VALUE_ACCESSOR],
     animations: [
       trigger('overlayAnimation', [
         state('void', style({
@@ -68,7 +68,7 @@ export const KALTURA_AUTOCOMPLETE_VALUE_ACCESSOR: any = {
     },
     /* tslint:enable */
 })
-// [kmcng] upon upgrade: compare implemented interfaces in the original component (no need to include ControlValueAccessor)
+// [vmcng] upon upgrade: compare implemented interfaces in the original component (no need to include ControlValueAccessor)
 export class AutoComplete extends PrimeAutoComplete implements OnDestroy, AfterViewChecked, AfterContentInit,DoCheck  {
     private _suggestionsProvider$ : ISubscription = null;
     public _loading = false;
@@ -163,7 +163,7 @@ export class AutoComplete extends PrimeAutoComplete implements OnDestroy, AfterV
     {
         // IE11 bug causing output event to fire upon input field blur event when there is a placeholder. Thus, we remove the placeholder attribute for IE11, single selection mode.
         // Additional details: https://connect.microsoft.com/IE/feedback/details/810538/ie-11-fires-input-event-on-focus
-        const isIE11 = KalturaBrowserUtils.detectBrowser() === BrowserNames.IE11;
+        const isIE11 = VidiunBrowserUtils.detectBrowser() === BrowserNames.IE11;
         this._placeholder = isIE11 && !this._allowMultiple ? '' : value;
     }
     get placeholder(): string{
@@ -264,7 +264,7 @@ export class AutoComplete extends PrimeAutoComplete implements OnDestroy, AfterV
 
      private get input() : HTMLInputElement
      {
-         // [kmcng] we override multi mode to always be multiple so the input should always huse the multiInputEl
+         // [vmcng] we override multi mode to always be multiple so the input should always huse the multiInputEl
          return this.multiInputEL.nativeElement;
      }
 
@@ -522,7 +522,7 @@ export class AutoComplete extends PrimeAutoComplete implements OnDestroy, AfterV
             }
 
             if (selectedItemValue === null || typeof selectedItemValue === 'undefined') {
-                console.warn("[kaltura] -> trying to select a value that is either null or undefined. action ignored"); // keep warning
+                console.warn("[vidiun] -> trying to select a value that is either null or undefined. action ignored"); // keep warning
             }else {
                 super.selectItem(selectedItemValue);
             }

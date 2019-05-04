@@ -16,14 +16,14 @@ export class PopupWidgetLayout {
   static increaseModalCount(){
       PopupWidgetLayout.modalsCount++;
       if (PopupWidgetLayout.modalsCount === 1){
-          document.body.classList.add("kModal");
+          document.body.classList.add("vModal");
       }
   }
 
   static decreaseModalCount(){
       PopupWidgetLayout.modalsCount--;
       if (PopupWidgetLayout.modalsCount === 0){
-          document.body.classList.remove("kModal");
+          document.body.classList.remove("vModal");
       }
       if (PopupWidgetLayout.modalsCount < 0){
           PopupWidgetLayout.modalsCount = 0;

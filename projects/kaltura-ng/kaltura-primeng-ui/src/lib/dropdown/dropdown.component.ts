@@ -12,7 +12,7 @@ export const DROPDOWN_VALUE_ACCESSOR: any = {
 
 
 @Component({
-  selector: 'kDropdown',
+  selector: 'vDropdown',
   templateUrl: 'dropdown.component.html',
   styleUrls: ['dropdown.component.scss'],
   animations: [

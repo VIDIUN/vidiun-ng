@@ -5,7 +5,7 @@ import { DynamicFormService } from './dynamic-form.service';
 import { DynamicFormControlBase } from './dynamic-form-control-base';
 
 @Component({
-    selector: 'k-dynamic-form-item',
+    selector: 'v-dynamic-form-item',
     templateUrl: './dynamic-form-item.component.html',
     styleUrls : ['./dynamic-form-item.component.scss']
 })

@@ -1,9 +1,9 @@
-<div class="kInputHelper" #inputHelperContainer>
-    <a class="kIconhelpLink" [class.kActive]="helperPopup.isShow" #helperLink><i class="{{triggerIcon}}"></i></a>
+<div class="vInputHelper" #inputHelperContainer>
+    <a class="vIconhelpLink" [class.vActive]="helperPopup.isShow" #helperLink><i class="{{triggerIcon}}"></i></a>
 
-    <kPopupWidget
+    <vPopupWidget
                   #helperPopup
-                  class="kInputHelperPopup"
+                  class="vInputHelperPopup"
                   [appendTo]="inputHelperContainer"
                   [targetOffset]="{x: 0, y: 20}"
                   [popupWidth]="width"
@@ -13,16 +13,16 @@
                   [targetRef]="helperLink">
 
         <ng-template>
-            <div class="kInputHelperContainer kAverageElevation">
-                <div *ngIf="title" class="kInputHelperPopupHeader">
-                    <i class="kIcon {{icon}}"></i>
+            <div class="vInputHelperContainer vAverageElevation">
+                <div *ngIf="title" class="vInputHelperPopupHeader">
+                    <i class="vIcon {{icon}}"></i>
                     {{title}}
                 </div>
-                <div class="kInputHelperPopupContent">
+                <div class="vInputHelperPopupContent">
                     <ng-content></ng-content>
                 </div>
             </div>
         </ng-template>
 
-    </kPopupWidget>
+    </vPopupWidget>
 </div>

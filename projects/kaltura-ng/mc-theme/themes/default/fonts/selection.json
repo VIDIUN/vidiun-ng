@@ -13,7 +13,7 @@
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "kaltura_logo"
+          "vidiun_logo"
         ]
       },
       "attrs": [
@@ -22,7 +22,7 @@
       "properties": {
         "order": 5,
         "id": 0,
-        "name": "kaltura_logo",
+        "name": "vidiun_logo",
         "prevSize": 32,
         "code": 59743
       },
@@ -2808,7 +2808,7 @@
   ],
   "height": 1024,
   "metadata": {
-    "name": "kmcng-icon-pack"
+    "name": "vmcng-icon-pack"
   },
   "preferences": {
     "showGlyphs": true,
@@ -2817,9 +2817,9 @@
     "showQuickUse2": true,
     "showSVGs": true,
     "fontPref": {
-      "prefix": "kIcon",
+      "prefix": "vIcon",
       "metadata": {
-        "fontFamily": "kmcng-icon-pack",
+        "fontFamily": "vmcng-icon-pack",
         "majorVersion": 1,
         "minorVersion": 0
       },

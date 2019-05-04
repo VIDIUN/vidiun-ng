@@ -2,7 +2,7 @@ import { Component, Input, OnInit, ViewEncapsulation, ViewChild, ElementRef, Ren
 import { AreaBlockerMessage } from './area-blocker-message';
 
 @Component({
-  selector: 'k-area-blocker',
+  selector: 'v-area-blocker',
   templateUrl: './area-blocker.component.html',
   styleUrls: ['./area-blocker.component.scss'],
   encapsulation : ViewEncapsulation.None
