@@ -14,11 +14,11 @@
   "contributors": [
     {
       "name": "Eran Sakal",
-      "email": "eran@sakalim.com"
+      "email": "dev@vidiun.com"
     },
     {
       "name": "Amir Chervinsky",
-      "email": "amir.chr@gmail.com"
+      "email": "dev@vidiun.com"
     }
   ],
   "keywords": [
@@ -40,7 +40,7 @@
   },
   "author": {
     "name": "Vidiun Community",
-    "email": "community@vidiun.com"
+    "email": "dev@vidiun.com"
   },
   "license": "AGPL-3.0",
   "dependencies": {
