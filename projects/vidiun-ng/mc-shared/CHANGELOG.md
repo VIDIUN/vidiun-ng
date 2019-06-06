@@ -1,4 +1,10 @@
 # Change Log
+<a name="5.1.8"></a>
+## 5.1.8 (2019-06-06)
+
+* update dependent libraries versions
+
+
 <a name="5.1.7"></a>
 ## [5.1.7](https://github.com/vidiun/vidiun-ng/compare/@vidiun-ng/mc-shared@5.1.6...5.1.7) (2019-06-06)
 

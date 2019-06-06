@@ -1,4 +1,10 @@
 # Change Log
+<a name="3.1.4"></a>
+## 3.1.4 (2019-06-06)
+
+* update dependent libraries versions
+
+
 <a name="3.1.3"></a>
 ## [3.1.3](https://github.com/vidiun/vidiun-ng/compare/@vidiun-ng/vidiun-primeng-ui@3.1.1...3.1.3) (2019-06-06)
 
