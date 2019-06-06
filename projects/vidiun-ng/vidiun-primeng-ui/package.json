@@ -1,5 +1,5 @@
 {
-  "name": "@kaltura-ng/kaltura-primeng-ui",
+  "name": "@vidiun-ng/vidiun-primeng-ui",
   "version": "3.1.2",
   "private": false,
   "description": "Angular - Vidiun UI directives, pipes and services that utilizes PrimeNG suite",
