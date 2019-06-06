@@ -1,6 +1,6 @@
 {
   "name": "@vidiun-ng/vidiun-ui",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "private": false,
   "description": "Angular - Vidiun UI directives, pipes and services",
   "scripts": {
@@ -43,7 +43,7 @@
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.2.0",
     "@angular/forms": "^7.2.0",
-    "@vidiun-ng/vidiun-common": "7.0.4",
+    "@vidiun-ng/vidiun-common": "7.0.5",
     "jquery": "^3.3.1",
     "moment": "^2.22.0"
   }

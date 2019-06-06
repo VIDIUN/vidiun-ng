@@ -1,6 +1,6 @@
 {
   "name": "@vidiun-ng/vidiun-common",
-  "version": "7.0.4",
+  "version": "7.0.5",
   "private": false,
   "description": "Angular - commonly needed services within Vidiun projects",
   "scripts": {

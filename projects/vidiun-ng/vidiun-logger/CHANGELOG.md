@@ -1,4 +1,10 @@
 # Change Log
+<a name="3.0.4"></a>
+## [3.0.4](https://github.com/vidiun/vidiun-ng/compare/@vidiun-ng/vidiun-logger@3.0.3...3.0.4) (2019-06-06)
+
+* update dependent libraries versions
+
+
 <a name="3.0.3"></a>
 ## 3.0.3 (2019-06-06)
 
