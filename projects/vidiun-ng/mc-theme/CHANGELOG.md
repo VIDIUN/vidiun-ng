@@ -1,4 +1,10 @@
 # Change Log
+<a name="3.0.11"></a>
+## 3.0.11 (2019-06-06)
+
+* update dependent libraries versions
+
+
 <a name="3.0.10"></a>
 ## [3.0.10](https://github.com/vidiun/vidiun-ng/compare/@vidiun-ng/mc-theme@3.0.9...3.0.10) (2019-04-18)
 

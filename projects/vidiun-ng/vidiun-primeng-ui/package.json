@@ -1,6 +1,6 @@
 {
   "name": "@vidiun-ng/vidiun-primeng-ui",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "private": false,
   "description": "Angular - Vidiun UI directives, pipes and services that utilizes PrimeNG suite",
   "scripts": {
@@ -44,8 +44,8 @@
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.2.0",
     "@angular/forms": "^6.1.6",
-    "@vidiun-ng/vidiun-common": "7.0.3",
-    "@vidiun-ng/vidiun-ui": "7.1.0",
+    "@vidiun-ng/vidiun-common": "7.0.4",
+    "@vidiun-ng/vidiun-ui": "7.1.1",
     "primeng": "^7.0.0"
   }
 }

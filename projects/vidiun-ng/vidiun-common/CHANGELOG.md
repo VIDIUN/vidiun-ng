@@ -1,4 +1,10 @@
 # Change Log
+<a name="7.0.4"></a>
+## 7.0.4 (2019-06-06)
+
+* update dependent libraries versions
+
+
 <a name="7.0.3"></a>
 ## [7.0.3](https://github.com/vidiun/vidiun-ng/compare/@vidiun-ng/vidiun-common@7.0.2...7.0.3) (2019-02-07)
 

@@ -1,6 +1,6 @@
 {
   "name": "@vidiun-ng/mc-shared",
-  "version": "5.1.5",
+  "version": "5.1.6",
   "private": false,
   "description": "Angular - Vidiun Managemenet consoles UI directives, pipes and services",
   "scripts": {
@@ -45,9 +45,9 @@
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.2.0",
     "@angular/forms": "^6.1.6",
-    "@vidiun-ng/vidiun-common": "7.0.3",
-    "@vidiun-ng/vidiun-logger": "3.0.2",
-    "@vidiun-ng/vidiun-ui": "7.1.0",
+    "@vidiun-ng/vidiun-common": "7.0.4",
+    "@vidiun-ng/vidiun-logger": "3.0.3",
+    "@vidiun-ng/vidiun-ui": "7.1.1",
     "@ngx-translate/core": "^10.0.2",
     "primeng": "^7.0.0",
     "seamless-immutable": "^7.1.2"
