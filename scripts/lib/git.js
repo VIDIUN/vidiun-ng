@@ -35,7 +35,7 @@ function gitCommit(message) {
 
   if (message.indexOf(os.EOL) > -1) {
     // Use tempfile to allow multi\nline strings.
-    args.push("-F", tempWrite.sync(message, "kaltura-commit.txt"));
+    args.push("-F", tempWrite.sync(message, "vidiun-commit.txt"));
   } else {
     args.push("-m", message);
   }

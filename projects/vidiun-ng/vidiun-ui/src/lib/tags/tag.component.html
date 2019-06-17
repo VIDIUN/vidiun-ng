@@ -1,0 +1,10 @@
+<div class="vTag" [class.vTagDisabled]="disabled" *ngIf="label" [ngSwitch]="!!template">
+	<div *ngSwitchCase="true">
+		<!-- CUSTOM TEMPLATE -->
+		<ng-container *ngTemplateOutlet="template;context:{item: { label: label, tooltip: tooltip, showRemove: showRemove, data: data }}"></ng-container>
+	</div>
+    <div class="vTagContent" title="{{tooltip}}" *ngSwitchCase="false">
+        <span class="vTagLabel">{{label}}</span>
+        <i *ngIf="showRemove" class="vTagRemove vIconclose_small" (click)="!disabled && removeTag(data)"></i>
+    </div>
+</div>

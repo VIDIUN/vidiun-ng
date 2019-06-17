@@ -1,0 +1,28 @@
+<div class="vInputHelper" #inputHelperContainer>
+    <a class="vIconhelpLink" [class.vActive]="helperPopup.isShow" #helperLink><i class="{{triggerIcon}}"></i></a>
+
+    <vPopupWidget
+                  #helperPopup
+                  class="vInputHelperPopup"
+                  [appendTo]="inputHelperContainer"
+                  [targetOffset]="{x: 0, y: 20}"
+                  [popupWidth]="width"
+                  [closeBtn]="false"
+                  [trigger]="trigger"
+                  [placement]="placement"
+                  [targetRef]="helperLink">
+
+        <ng-template>
+            <div class="vInputHelperContainer vAverageElevation">
+                <div *ngIf="title" class="vInputHelperPopupHeader">
+                    <i class="vIcon {{icon}}"></i>
+                    {{title}}
+                </div>
+                <div class="vInputHelperPopupContent">
+                    <ng-content></ng-content>
+                </div>
+            </div>
+        </ng-template>
+
+    </vPopupWidget>
+</div>

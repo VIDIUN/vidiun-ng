@@ -1,0 +1,99 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: $appBkgColor;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-rendering: geometricPrecision;
+  -webkit-backface-visibility: hidden;
+}
+
+label {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.link {
+	font-size: 15px;
+	color: $vTertiary;
+	text-decoration: underline;
+	cursor: pointer;
+	&:hover:not(.disabled) {
+		color: darken($vTertiary, 10%);
+	}
+	&:active:not(.disabled) {
+		color: $vTertiary;
+	}
+	&:disabled {
+		border: 0px solid white;
+		cursor: default;
+		color: $vGrayscale4;
+	}
+	&.disabled {
+		border: 0px solid white;
+		cursor: default;
+		color: $vGrayscale4;
+	}
+	text-overflow: ellipsis;
+}
+
+.error {
+	color: $vDandger;
+}
+
+a {
+	@extend .link;
+	outline: none;
+}
+
+select {
+	outline: none;
+}
+
+/* main content width according to screen resolution */
+@media screen and (max-width: 991px) {
+	.vContent {
+		width: 970px;
+		margin: auto !important;
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.vContent {
+		width: 970px;
+		margin: auto !important;
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 1310px) {
+	.vContent {
+		width: 1200px;
+		margin: auto !important;
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 1610px) {
+	.vContent {
+		width: 1500px;
+		margin: auto !important;
+		display: flex;
+	}
+}
+
+/* support retina devices */
+
+@media(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	/* Retina-specific stuff here */
+}
+

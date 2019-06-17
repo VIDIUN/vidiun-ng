@@ -1,0 +1,12 @@
+@import '~normalize.css/normalize.css';
+@import "variables";
+
+@import 'primeng/index';
+
+@import '@vidiun-ng/vidiun-ui/styles/scss/theme';
+@import '@vidiun-ng/vidiun-primeng-ui/styles/scss/theme';
+
+@import 'icons'; //icons font
+
+@import 'base';
+@import 'components';

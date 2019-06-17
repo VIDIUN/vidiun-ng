@@ -1,0 +1,72 @@
+<div *ngIf="control" [formGroup]="form">
+
+    <ng-container  *ngIf="control.controlType === 'Group' && control.allowMultiple">
+            <div class="vMultiple" [formArrayName]="control.key">
+                <span class="vGroupTitle" *ngIf="control.label">
+                    <span [vTooltip]="control.description">{{control.label}}</span>
+                </span>
+                <div class="vGroupContainer"  *ngFor="let groupForm of asFormGroup(form.controls[control.key]).controls; let i=index">
+
+                    <div [formGroupName]="i">
+                        <v-dynamic-form-item *ngFor="let childControl of asDynamicSection(control).children"
+                                          [control]="childControl"
+                                          [form]="groupForm">
+                            <ng-template let-item="item">
+                                <ng-container *ngTemplateOutlet="_templates.first;context:{ item : item }">
+                                </ng-container>
+                            </ng-template>
+                        </v-dynamic-form-item>
+                    </div>
+
+                    <div class="vDeleteGroup">
+                        <a (click)="!form.disabled && removeItem(control,i)" [class.disabled]="form.disabled">Delete</a>
+                    </div>
+                </div>
+
+                <div class="vGroupButtons">
+                    <button (click)="addItem(control)" class="vButton" [disabled]="form.disabled">Add</button>
+                </div>
+            </div>
+    </ng-container>
+
+    <div class="vMultiple" *ngIf="control.controlType === 'Group' && !control.allowMultiple">
+        <span class="vGroupTitle" *ngIf="control.label">
+            <span [vTooltip]="control.description">{{control.label}}</span>
+        </span>
+        <v-dynamic-form-item *ngFor="let childControl of asDynamicSection(control).children" [control]="childControl" [form]="form" [labelTemplate]="labelTemplate">
+            <ng-template let-item="item">
+                <ng-container *ngTemplateOutlet="_templates.first;context:{ item : item }"></ng-container>
+            </ng-template>
+        </v-dynamic-form-item>
+    </div>
+
+    <div class="vRow" [ngClass]="control.styleClass" *ngIf="control.controlType !== 'Group'">
+        <div class="vFormLabelContainer">
+            <span class="vLabel" *ngIf="control.label && !!labelTemplate == false">{{control.label}}
+                <vInputHelper *ngIf="control.inputHelperConfig && control.inputHelperConfig.body" [title]="control.inputHelperConfig.title">
+                    <span [innerHTML]="control.inputHelperConfig.body"></span>
+                </vInputHelper>
+            </span>
+            <ng-container *ngIf="!!labelTemplate">
+                <ng-container *ngTemplateOutlet="labelTemplate;context:{item: { control : control, form : form, isRequired : isRequired }}"></ng-container>
+            </ng-container>
+            <span *ngIf="isRequired" class="vFormRequiredIndicator">*</span>
+        </div>
+        <div class="vMultiple" *ngIf="control.allowMultiple" [formArrayName]="control.key">
+
+            <div class="vSingleItem" *ngFor="let itemFormGroup of asFormGroup(form.controls[control.key]).controls; let i=index" [formGroupName]="i">
+                    <ng-container *ngTemplateOutlet="_templates.first;context:{item: { control : control, form : itemFormGroup }}"></ng-container>
+                <a (click)="!form.disabled && removeItem(control,i)" class="vDelete" [class.disabled]="form.disabled">Delete</a>
+            </div>
+            <div>
+                <button class="vButton" (click)="!form.disabled && addItem(control)" [disabled]="form.disabled">Add</button>
+            </div>
+        </div>
+
+        <div class="vControl" [ngClass]="[control.controlType, control.key + 'Control']" *ngIf="!control.allowMultiple">
+            <ng-container *ngTemplateOutlet="_templates.first;context:{item: { control : control, form : form }}"></ng-container>
+        </div>
+        <!--<div class="errorMessage" *ngIf="form.controls[control.key].valid">{{control.label}} is required</div>-->
+    </div>
+</div>
+

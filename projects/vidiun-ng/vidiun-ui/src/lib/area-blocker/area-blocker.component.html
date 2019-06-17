@@ -1,0 +1,17 @@
+<ng-content></ng-content>
+<div #areaBlockerContainer *ngIf="showLoader || _message" class="vAreaBlockerContainer" [class.vAreaBlockerContainerError]="_message" [ngClass]="classes">
+  <div *ngIf="showLoader && !_message" class="loading-backdrop show">
+    <div #spinnerContainer class='spinner-container' [class.bodyScroll]="bodyScroll" [style.marginTop]="spinnerMarginTop+'px'">
+      <div class='spinner'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div  class="vErrorMessageContainer" *ngIf="_message" [class.bodyScroll]="bodyScroll">
+    <div class="vErrorMessage">
+      <div class="vErrorMessageTitle">{{ _message.title }}</div>
+      <div class="vErrorMessageText">{{ _message.message }}</div>
+      <div class="vErrorButtons">
+        <button *ngFor="let button of _message.buttons" (click)="handleAction(button)" [ngClass]="button.classes">{{button.label}}</button>
+      </div>
+    </div>
+  </div>
+</div>

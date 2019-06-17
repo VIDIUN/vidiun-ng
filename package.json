@@ -1,16 +1,16 @@
 {
-  "name": "kaltura-ng",
+  "name": "vidiun-ng",
   "version": "0.0.0",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaltura/kaltura-ng.git"
+    "url": "https://github.com/vidiun/vidiun-ng.git"
   },
   "bugs": {
-    "url": "https://github.com/kaltura/kaltura-ng/issues"
+    "url": "https://github.com/vidiun/vidiun-ng/issues"
   },
-  "homepage": "https://github.com/kaltura/kaltura-ng#readme",
-  "description": "A set of packages providing common infrastructure for angular based applications connected to the Kaltura platform",
+  "homepage": "https://github.com/vidiun/vidiun-ng#readme",
+  "description": "A set of packages providing common infrastructure for angular based applications connected to the Vidiun platform",
   "contributors": [
     {
       "name": "Eran Sakal",
@@ -22,7 +22,7 @@
     }
   ],
   "keywords": [
-    "kaltura"
+    "vidiun"
   ],
   "scripts": {
     "ng": "ng",
@@ -39,8 +39,8 @@
     "e2e": "ng e2e"
   },
   "author": {
-    "name": "Kaltura Community",
-    "email": "community@kaltura.com"
+    "name": "Vidiun Community",
+    "email": "community@vidiun.com"
   },
   "license": "AGPL-3.0",
   "dependencies": {

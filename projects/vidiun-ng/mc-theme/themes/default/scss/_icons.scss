@@ -1,0 +1,117 @@
+@import '../fonts/style';
+
+.vOverrideFAIcons {
+    .pi, .fa {
+        font-family: 'vmcng-icon-pack' !important;
+    }
+    .ui-submenu-icon.pi-caret-right:before{
+        @extend .vIcondropdown_arrow_right:before;
+    }
+    .ui-tree-toggler.pi-caret-right:before{
+        @extend .vIcontree-arrow-right:before;
+    }
+    .ui-tree-toggler.pi-caret-down:before{
+        @extend .vIcontree-arrow-down:before;
+    }
+    .ui-sortable-column-icon.fa-sort-asc:before{
+        @extend .vIcondropdown_arrow_top:before;
+    }
+    .ui-sortable-column-icon.fa-sort-desc:before{
+        @extend .vIcondropdown_arrow_bottom:before;
+    }
+    .ui-paginator-next.ui-paginator-element .ui-paginator-icon.pi.pi-caret-right:before{
+        @extend .vIcondropdown_arrow_right:before;
+        font-size: 12px;
+    }
+    .ui-paginator-prev.ui-paginator-element .ui-paginator-icon.pi.pi-caret-left:before{
+        @extend .vIcondropdown_arrow_left:before;
+        font-size: 12px;
+    }
+    .ui-paginator-last.ui-paginator-element .pi.pi-step-forward:before{
+        @extend .vIconpagination_end:before;
+        font-size: 12px;
+    }
+    .ui-paginator-first.ui-paginator-element .pi.pi-step-backward:before{
+        @extend .vIconpagination_start:before;
+        font-size: 12px;
+    }
+    .ui-chkbox-icon.pi.pi-check:before, .ui-chkbox-icon.fa.fa-check:before{
+        @extend .vIconcheck_small:before;
+        font-size: 10px;
+    }
+    .ui-chkbox-icon.pi.pi-minus:before{
+        @extend .vIconpartial_small:before;
+        font-size: 9px;
+    }
+    .ui-datepicker-prev .pi.pi-chevron-left:before{
+        @extend .vIcondropdown_arrow_left:before;
+        font-size: 9px;
+    }
+    .ui-datepicker-next .pi.pi-chevron-right:before{
+        @extend .vIcondropdown_arrow_right:before;
+        font-size: 9px;
+    }
+  .ui-dropdown-open .ui-dropdown-trigger-icon {
+    transform: rotate(180deg) translateY(-50%);
+    margin-top: -11px;
+  }
+	.ui-dropdown-trigger .pi.pi-caret-down:before{
+		@extend .vIcondropdown_arrow_bottom:before;
+		font-size: 10px;
+	}
+	.ui-spinner.ui-widget .pi.pi-caret-down:before{
+		@extend .vIcondropdown_arrow_bottom:before;
+		font-size: 10px;
+	}
+	.ui-spinner.ui-widget .pi.pi-caret-up:before{
+		@extend .vIcondropdown_arrow_top:before;
+		font-size: 10px;
+	}
+	.ui-timepicker .pi.pi-chevron-up{
+		@extend .vIcondropdown_arrow_top;
+	}
+	.ui-timepicker .pi.pi-chevron-down{
+		@extend .vIcondropdown_arrow_bottom;
+	}
+  .ui-dropdown-trigger .pi.pi-chevron-up{
+    @extend .vIcondropdown_arrow_top;
+    color: #666;
+    font-size: .8em;
+  }
+  .ui-dropdown-trigger .pi.pi-chevron-down {
+    @extend .vIcondropdown_arrow_bottom;
+    color: #666;
+    font-size: .8em;
+  }
+  .ui-multiselect-trigger .pi.pi-chevron-up {
+    @extend .vIcondropdown_arrow_top;
+    color: #666;
+    font-size: .8em;
+  }
+  .ui-multiselect-trigger .pi.pi-chevron-down {
+    @extend .vIcondropdown_arrow_bottom;
+    color: #666;
+    font-size: .8em;
+  }
+  .pi-sort-down{
+    @extend .vIcondropdown_arrow_bottom;
+  }
+  .pi-sort-up{
+    @extend .vIcondropdown_arrow_top;
+  }
+	.ui-multiselect-trigger .pi.pi-caret-down:before{
+		@extend .vIcondropdown_arrow_bottom:before;
+		font-size: 12px;
+	}
+	.ui-multiselect-filter-container  .pi.pi-search:before{
+		@extend .vIconmagnifier:before;
+	}
+
+  .ui-table-tbody .pi.pi-chevron-right:before{
+    @extend .vIcontree-arrow-right;
+  }
+
+  .ui-table-tbody .pi.pi-chevron-down{
+    @extend .vIcontree-arrow-down;
+  }
+}

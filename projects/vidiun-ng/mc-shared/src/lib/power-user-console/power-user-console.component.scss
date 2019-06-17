@@ -1,0 +1,25 @@
+.vPowerUserConsoleContainer {
+  .vHeader {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+  }
+
+  .vRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .vLabel {
+    width: 140px;
+    flex: 0 0 auto;
+  }
+
+  .vControl {
+    height: 34px;
+    width: 140px;
+    border-radius: 3px;
+  }
+}

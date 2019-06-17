@@ -1,0 +1,48 @@
+@import '../../styles/scss/theme';
+
+.vInputHelper {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    position: relative;
+
+    .vIconhelpLink {
+      color: $vGrayscale3;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+
+      &:hover, &.vActive {
+        color: $vSecondary;
+      }
+    }
+  }
+
+  .vInputHelperPopup {
+    border-radius: 3px;
+
+    ::ng-deep .vPopupWidget {
+      box-shadow: none;
+    }
+
+    .vInputHelperContainer {
+      font-size: 15px;
+      line-height: 20px;
+      color: $vGrayscale3;
+      padding: 16px;
+      border-radius: 3px;
+    }
+
+    .vInputHelperPopupHeader {
+      color: $vGrayscale1;
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+
+      .vIcon {
+        color: $vGrayscale3;
+        font-size: 24px;
+        margin-right: 14px;
+      }
+    }
+  }

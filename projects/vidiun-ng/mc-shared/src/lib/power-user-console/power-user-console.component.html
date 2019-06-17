@@ -1,0 +1,16 @@
+<p-sidebar position="right"
+           appendTo="body"
+           (visibleChange)="visibleChange.emit($event)"
+           [(visible)]="visible">
+    <div class="vPowerUserConsoleContainer">
+        <h1 class="vHeader">Power User Console</h1>
+        <div class="vRow">
+            <span class="vLabel">Current log level</span>
+            <p-dropdown [options]="_logLevelValues"
+                        [style]="{'width':'140px'}"
+                        [autoWidth]="false"
+                        (ngModelChange)="_logLevelChange($event)"
+                        [(ngModel)]="_selectedLogLevel"></p-dropdown>
+        </div>
+    </div>
+</p-sidebar>

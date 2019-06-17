@@ -1,0 +1,24 @@
+<div class="vRangeContainer">
+  <div [style.width]="width">
+    <div class="vRangeInput vRangeInputBlock">
+      <div class="vBbar">
+        <div class="vBarProgress"
+             [style.width]="getProgressBarStyle() + '%'"></div>
+        <div class="vBarPoints">
+          <div class="vBarPointCol" (mouseout)="pointOvered[i]=false" (mouseover)="pointOvered[i]=true" [style.width]="100 / (options.length-1) + '%'"
+               *ngFor="let option of options; index as i">
+            <div class="vPoint"
+                 [ngClass]="{
+                 'vSelected': (pointOvered.length > 0 && pointOvered[i]) || i == selectedOptionIndex,
+                 'vBgPrimary':  i <= selectedOptionIndex
+               }"></div>
+            <div class="vPointClickArea"
+                 (click) = "pointSelected(i)"
+                 [vTooltip] = "option.tooltip"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="vSelectedLabel">{{selectedText}}</span>
+</div>

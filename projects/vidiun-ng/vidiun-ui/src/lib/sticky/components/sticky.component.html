@@ -1,0 +1,5 @@
+<div class="vStickyWrapper" [style.height]="wrapperHeight + 'px'" #contentWrapper>
+    <div #stickyDiv class="vSticky" vSticky [scrollOffset]="scrollOffset" [sticksTo]="sticksTo" [stickyClass]="stickyClass" [stickyId]="stickyId" (onStickyEvent)="_updateDimensions()" (onUnStickyEvent)="_updateDimensions()">
+        <ng-content></ng-content>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+.vCopyToClipboardContainer {
+  display: inline-block;
+  .vCopyToClipboard {
+    width: 24px;
+    height: 24px;
+    border: none;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0;
+  }
+  .vSuccess {
+    @extend %fadein;
+    cursor: auto;
+  }
+
+  .vError {
+    @extend %fadein;
+    cursor: not-allowed;
+  }
+
+  .vIdle {
+    cursor: pointer;
+  }
+}
+
+%fadein {
+  animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s; /* Firefox */
+  -webkit-animation: fadein 0.3s; /* Safari and Chrome */
+  -o-animation: fadein 0.3s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

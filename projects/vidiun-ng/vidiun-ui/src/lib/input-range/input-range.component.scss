@@ -1,0 +1,90 @@
+@import '../../styles/scss/theme';
+
+.vRangeContainer{
+  display: flex;
+
+  .vRangeInput {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    user-select: none;
+
+    &.vRangeInputBlock {
+      display: block;
+      width: 100%;
+    }
+
+    .vBbar {
+      height: 4px; width: 100%;
+      background-color: $vGrayscale4;
+      position: relative;
+
+      .vBarProgress {
+        background-color: $vPrimary;
+        height: 100%;
+      }
+      .vBarPoints {
+        position: absolute;
+        left: 0; top: -8px;
+        width: 100%;
+
+        .vBarPointCol {
+          float: left;
+          position: relative;
+          height: 20px;
+
+          &:last-child {
+            width: 0% !important;
+          }
+
+          .vPointClickArea {
+            position: absolute;
+            width: 45px;
+            margin-top: -10px;
+            height: 40px;
+            transform: translateX(-50%);
+            cursor: pointer;
+          }
+
+          .vPoint {
+            width: 9px; height: 9px;
+            margin-top: 1px;
+            border-radius: 50%;
+            background-color: $vGrayscale4;
+            position: absolute;
+            transform: translateX(-50%);
+            cursor: pointer;
+            border: 4px solid #FFFFFF;
+
+            &.vSelected {
+              width: 16px; height: 16px;
+              margin-top: -3px;
+              border-radius: 50%;
+            }
+
+            &.vBgPrimary{
+              background-color: $vPrimary;
+              &.vSelected{
+                border: none !important;
+                margin-top:2px !important;
+              }
+
+            }
+          }
+          span {
+            position: absolute;
+            transform: translateX(-50%);
+            bottom: -36px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .vSelectedLabel{
+    padding-left: 30px;
+    padding-top: 3px;
+    font-size: 15px;
+  }
+}
